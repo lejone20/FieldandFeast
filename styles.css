@@ -1,16 +1,3 @@
-/* CSS BY NAME Lillian Jones */
-/* IMPORTED FONTS */
-@font-face {
-    font-family: Kavoon, Inter;
-    src: url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
-}
-/* CSS RESET */
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-
 .root{
 
     --midnight-blue: #1F2A44;
@@ -24,13 +11,16 @@
 
 }
 
-
+header {
+    gap: none;
+}
 header, footer {
     text-align: center;
     width:100%;
     background-color: #1F2A44;
     color: #F8F4EC;
     font-family: Playfair Display;
+    vertical-align: middle;
 }
   body {
     min-width: 320px;
@@ -46,6 +36,8 @@ header, footer {
         background-color:#E5C185;
         font-weight:bold;
         text-align: center;
+        height: 35px;
+
 
     }
       
@@ -57,22 +49,81 @@ header, footer {
         font-style: italic;
     }
 
-    #welcome, #Offerings, #gallery {
-        margin-left: 325px;
+    #welcome, #Offerings, #gallery{
+        margin-left: 320px;
         margin-right: 300px;
         margin-top: 35px;
         text-align: left;
     }
-
-    #artisan, #basket, #dining{
+   
+    #artisan, #basket, #dining, #button {
         background-color: #76885B;
         color: #F8F4EC;
        
     }
-    #artisan, #dining{
+  #button{
+    text-align: center;
+  }
+#artisan, #basket{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1ft;
+}
+    #tomatoes, #olive-oil, #table-setting, #plating, #basket-img{
         display: inline-block;
-        width: 550px;
-        height: 150px;
-        align-items: baseline;
+        gap: 10px;
+        justify-content: center;
+    }
+   
+    #tomatoes img, #olive-oil img, #table-setting img, #plating img, #basket-img img{
+       width: 250px;
+       border-top-right-radius: 10px;
+       border-top-left-radius: 10px;
+       justify-content: center;
+     
+
+    }
+    #tomatoes h3, #olive-oil h3, #table-setting h3, #plating h3, #basket-img h3{
+   
+        text-align: center;
+        background-color: var(--soft-white); 
+        height: 50px;
+        width: 250px;
+        box-shadow: 3px 3px rgb(202, 198, 198);
+        font-size: 12px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+ 
+     }
+
+   
+    #welcome, #Offerings, #gallery{
+         border-bottom: 2px solid #E5C185;
+         padding-bottom: 15px;
+         margin-bottom: 15px;
+    }
+    footer p {
+        color: #E5C185;
+    }
+    footer address > a{
+        color: #E5C185;
+    }
+    @media screen and (max-width: 600px) {
+ 
+        #gallery{
+            justify-content: center;
+        }
     }
 
+    @media screen and (min-width: 600px){
+     
+    }
+    @media screen and (min-width: 900px ){
+  
+  
+    }
+
+    @media screen and (min-width: 1200px){
+       main{
+        max-width: 1200px;
+    }
+    }
