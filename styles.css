@@ -26,7 +26,7 @@
 
 
 header, footer {
-
+    text-align: center;
     width:100%;
     background-color: #1F2A44;
     color: #F8F4EC;
@@ -37,6 +37,7 @@ header, footer {
     background-color: #FAF9F6;
     min-width: 320px;
     font-family: Playfair Display;
+    text-align: left;
     }
     nav ul {
         display: grid;
@@ -52,3 +53,26 @@ header, footer {
         list-style:none;
 
       }
+    header > p{
+        font-style: italic;
+    }
+
+    #welcome, #Offerings, #gallery {
+        margin-left: 325px;
+        margin-right: 300px;
+        margin-top: 35px;
+        text-align: left;
+    }
+
+    #artisan, #basket, #dining{
+        background-color: #76885B;
+        color: #F8F4EC;
+       
+    }
+    #artisan, #dining{
+        display: inline-block;
+        width: 550px;
+        height: 150px;
+        align-items: baseline;
+    }
+
